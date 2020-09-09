@@ -12,10 +12,10 @@
 <tbody>
     @foreach ($Schedule as $data)
     <tr>{{$loop->iteration}}</tr>
-    <tr>{{$data->User->name}}</tr>
+    <tr>{{$data->user->name}}</tr>
     <tr>{{$data->created_at->format('d-m-y')}}</tr>
     <tr>{{$data->schedule_name}}</tr>
-    <tr>{{$data->Status->nama_status}}</tr>
+    <tr>{{$data->status->nama_status}}</tr>
     <tr>{{$data->declaration}}</tr>
     <tr>{{$data->updated_at->format('d-m-y')}}</tr>
     @endforeach

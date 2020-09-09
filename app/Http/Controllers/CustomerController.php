@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Item;
 use App\Customer;
 use Illuminate\Http\Request;
-use App\Exports\ScheduleExcel;
+use App\Exports\CustomerExcel;
+// use App\Exports\ScheduleExcel;
 use Yajra\DataTables\DataTables;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -149,6 +150,6 @@ class CustomerController extends Controller
     public function exportExcel()
     {
         $fileName = "pelanggan-" . time() . ".xlsx";
-        return Excel::download(new ScheduleExcel, $fileName);
+        return Excel::download(new CustomerExcel, $fileName);
     }
 }

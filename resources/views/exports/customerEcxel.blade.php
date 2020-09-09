@@ -12,8 +12,6 @@
 </thead>
 <tbody>
     @foreach ($customers as $data)
-
-    @endforeach
     <tr>
         <td>{{$loop->iteration}}</td>
         <td>{{$data->customer_name}}</td>
@@ -24,4 +22,5 @@
         <td>{{$data->infromasion}}</td>
         <td>{{$data->created_at}}</td>
     </tr>
+    @endforeach
 </tbody>

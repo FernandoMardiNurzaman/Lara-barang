@@ -22,7 +22,7 @@
             <td>{{$data->category->category_name}}</td>
             <td>{{$data->condition->condition_name}}</td>
             <td>{{$data->fromWhere}}</td>
-            <td>{{$data->faultItem}}</td>
+            <td>{{$data->faultItems}}</td>
             <td>{{$data->created_at->format('d-m-y')}}</td>
         </tr>
         @endforeach
