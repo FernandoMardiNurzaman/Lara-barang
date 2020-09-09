@@ -27,11 +27,11 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::resource('item', 'ItemController');
     Route::get('get-item', 'ItemController@getData')->name('get.item.data');
-    Route::get('export-item', 'ItemController@export')->name("export.item");
+    Route::get('export/itemExcel', 'ItemController@export')->name("export.item.excel");
 
     Route::resource('customer', 'CustomerController');
     Route::get('/datacustomer', 'CustomerController@getData')->name("customer.data");
-    Route::get('export/customer_data', 'CustomerController@exportExcel')->name('export.customer');
+    Route::get('export/customer_data', 'CustomerController@exportExcel')->name('export.customer.excel');
 
     Route::resource('user', 'UserController');
     Route::get('datauser', 'UserController@getData')->name('user.data');

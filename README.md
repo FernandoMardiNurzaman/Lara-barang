@@ -1,8 +1,20 @@
-- [x] condition index & create
-- [x] condition index & edit
+- [x]kondisi
+- [x]kategory
+- [x]customer
+- [x]item
+- [x]itemExit
+- [ ]profile
+- [x]Schedule
+- [x]Status
+- [x]User
+- [ ]Login
 
 
-- [x] category index & create
-- [x] category index & edit
-  
-- [ ] condition index & create
+-[x]export excel itemExit
+-[ ]export excel item 
+-[x]export PDF itemExit
+-[ ]export excel Schedule
+-[ ]export excel Customer
+
+-[ ] Hide Status & Sedder
+-[ ] Test Aplikasi

@@ -14,7 +14,7 @@
         <div class="card-header">
             <div class="text-right mt-2 mb-2">
                 <div class="text-right">
-                    <a href="{{route('export.item')}}" class="btn btn-sm btn-info mt-1 mb-1"><i
+                    <a href="{{route('export.item.excel')}}" class="btn btn-sm btn-info mt-1 mb-1"><i
                             class="fas fa-file-excel mr-2"></i>export excel</a>
                     <a href="{{ route("item.create") }}" class="btn btn-outline-primary btn-sm">
                         <i class="fas fa-plus mr-2"></i>Tambah barang

@@ -9,7 +9,7 @@ use Maatwebsite\Excel\Concerns\FromView;
 class ScheduleExcel implements FromView
 {
     /**
-     * @return \Illuminate\Support\FromView
+     * @return \Illuminate\Support\Collection
      */
     public function view(): View
     {
