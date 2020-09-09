@@ -69,7 +69,7 @@ class UserController extends Controller
             'password' => Hash::make($request->email),
             'position' => $request->position,
             'gender' => $request->gender,
-            'image_user' => '',
+            'image_user' => null,
         ]);
         toastr()->success('User berhasil disimpan');
         return redirect()->route("user.index");

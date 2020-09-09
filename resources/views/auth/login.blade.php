@@ -25,7 +25,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4">
 
-                <form action="{{ route('login') }}" method="POST">\
+                <form action="{{ route('login') }}" method="POST">
                     @csrf
                     <br>
                     <br>
