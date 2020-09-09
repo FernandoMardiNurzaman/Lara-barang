@@ -15,11 +15,11 @@
     <tr>
         <td>{{$loop->iteration}}</td>
         <td>{{$data->customer_name}}</td>
-        <td>{{$data->address}}</td>
+        <td>{{$data->addrees}}</td>
         <td>{{$data->bandwith}}</td>
         <td>{{$data->price}}</td>
         <td>{{$data->height_tower}}</td>
-        <td>{{$data->infromasion}}</td>
+        <td>{{$data->informasion}}</td>
         <td>{{$data->created_at}}</td>
     </tr>
     @endforeach
