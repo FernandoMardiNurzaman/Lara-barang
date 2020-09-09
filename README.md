@@ -12,7 +12,7 @@
 - [x] Export excel itemExit
 - [ ] Export excel item 
 - [x] Export PDF itemExit
-- [ ] Export excel Schedule
-- [ ] Export excel Customer
+- [x] Export excel Schedule
+- [x] Export excel Customer
 - [ ] Hide Status & Sedder
 - [ ] Test Aplikasi
