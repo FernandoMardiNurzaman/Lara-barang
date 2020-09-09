@@ -14,6 +14,7 @@
             <th>Keterangan pelanggan</th>
             <th>Kerusakan</th>
             <th>Dibuat tanggal</th>
+            <th>Dibuat oleh</th>
         </tr>
     </thead>
     <tbody>
@@ -32,6 +33,7 @@
             <td>{{ $data->customer->informasion }}</td>
             <td>{{ $data->item->fault_items }}</td>
             <td>{{ $data->created_at->format('d-M-Y') }}</td>
+            <td>{{ $data->user->name }}</td>
 
         </tr>
         @endforeach

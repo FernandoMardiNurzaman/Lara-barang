@@ -17,7 +17,7 @@ class ItemExit extends Model
         'ip_adrress',
         'backbond',
     ];
-    public function users()
+    public function user()
     {
         return $this->belongsTo(User::class);
     }

@@ -8365,6 +8365,10 @@
                     <th>Di Buat Tanggal</th>
                     <td>{{$itemExit->created_at->format('d-M-Y')}}</td>
                 </tr>
+                <tr>
+                    <th>Di Buat Oleh</th>
+                    <td>{{$itemExit->user->name}}</td>
+                </tr>
             </table>
         </div>
         <div class="row text-right mt-5">

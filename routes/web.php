@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/dashboard', 'DashboardController@index')->name('admin.dashboard.index');
 
     Route::resource('category', 'CategoryController')->except(['show', 'create']);
@@ -28,7 +28,7 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::resource('item', 'ItemController');
     Route::get('get-item', 'ItemController@getData')->name('get.item.data');
-    Route::get('export/itemExcel', 'ItemExitController@exportExcel')->name("export.item.excel");
+    Route::get('export/itemExcel', 'ItemController@exportExcel')->name("export.item.excel");
 
     Route::resource('customer', 'CustomerController');
     Route::get('/datacustomer', 'CustomerController@getData')->name("customer.data");
@@ -49,10 +49,21 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('dataExit', 'ItemExitController@getData')->name('data.exit');
     Route::get('export/itemexitexcel', 'ItemExitController@exportExcel')->name('export.item.exit.excel');
     Route::get('export/itemexitpdf/{id}', 'ItemExitController@exportPdf')->name('export.item.exit.pdf');
-    Route::view('profile', 'admin.profile.edit');
+
+    Route::get('profile', 'ProfileController@index')->name('profile');
+    Route::post('profile/informasidasar', 'ProfileController@updateInformation')->name('update.profile.information');
+    Route::post('profile/updatepassword', 'ProfileController@updatePassword')->name('update.profile.password');
+    Route::post('profile/updateimages', 'ProfileController@updateImage')->name('update.profile.image');
+
+
+    Route::get('resetpassword/{id}', 'ProfileController@resetPassword')->name('reset.password');
 });
 
-Auth::routes();
+Auth::routes([
+    'register' => false,
+    'password.request' => false,
+    'password.reset' => false
+]);
 
 
 Route::get('/home', 'HomeController@index')->name('home');

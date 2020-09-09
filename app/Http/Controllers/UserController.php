@@ -69,7 +69,7 @@ class UserController extends Controller
             'password' => Hash::make($request->email),
             'position' => $request->position,
             'gender' => $request->gender,
-            'image_user' => 'image/default.jpg',
+            'image_user' => '',
         ]);
         toastr()->success('User berhasil disimpan');
         return redirect()->route("user.index");
@@ -82,6 +82,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
+        return view("admin.user.show", compact('user'));
     }
 
     /**

@@ -78,8 +78,11 @@
                     <td>{{$itemExit->customer->customer_name}}</td>
                 </tr>
                 <tr>
-                    <th>Di Buat Tanggal :</th>
-                    <td>{{$itemExit->created_at->format('d-M-Y')}}</td>
+                    <th>Di Buat Oleh :</th>
+                    <td>{{$itemExit->user->name}}</td>
+                </tr>
+                <th>Di Buat Tanggal :</th>
+                <td>{{$itemExit->created_at->format('d-M-Y')}}</td>
                 </tr>
             </table>
         </div>

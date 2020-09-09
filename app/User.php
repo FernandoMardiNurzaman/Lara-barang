@@ -43,7 +43,7 @@ class User extends Authenticatable
     {
         return $this->hasMany(Schedule::class);
     }
-    public function ItemExiti()
+    public function ItemExit()
     {
         return $this->hasMany(ItemExit::class);
     }

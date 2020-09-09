@@ -88,7 +88,7 @@ class ItemExitController extends Controller
                 'item_id' => 'required',
                 'ip_adrress' => 'required|ipv4',
                 'backbond' => 'required|ipv4',
-            ]) + ['user_id' => 1]
+            ]) + ['user_id' => \Auth::user()->id]
         );
 
         toastr()->success('Barang berhasil disimpan');
@@ -103,8 +103,7 @@ class ItemExitController extends Controller
      */
     public function show($id)
     {
-        // return view('admin.itemExit.show', ['itemExit' => ItemExit::all(), 'customer' => Customer::all(), 'item' => Item::all()]);
-
+        //dd(ItemExit::with('user')->findOrFail($id));
         return view('admin.itemExit.show', ['itemExit' => ItemExit::findOrFail($id)]);
     }
 
