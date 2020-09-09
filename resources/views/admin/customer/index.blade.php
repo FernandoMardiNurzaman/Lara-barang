@@ -11,12 +11,18 @@
 
 <div class="col-md-12 col-lg-12">
     <div class="card shadow">
-        <div class="card-body">
+        <div class="card-header">
             <div class="text-right mt-2 mb-2">
-                <a href="{{ route("customer.create") }}" class="btn btn-outline-primary btn-sm">
-                    <i class="fas fa-plus mr-2"></i>Tambah Pelanggan
-                </a>
+                <div class="text-right">
+                    <a href="{{route('export.customer.excel')}}" class="btn btn-sm btn-info mt-1 mb-1"><i
+                            class="fas fa-file-excel mr-2"></i>export excel</a>
+                    <a href="{{ route("customer.create") }}" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-plus mr-2"></i>Tambah Pelanggan
+                    </a>
+                </div>
             </div>
+        </div>
+        <div class="card-body">
             <table class="table table-hover table-bordered" id="data">
                 <thead>
                     <th>No</th>

@@ -31,7 +31,7 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::resource('customer', 'CustomerController');
     Route::get('/datacustomer', 'CustomerController@getData')->name("customer.data");
-    Route::get('export/customer_data', 'CustomerController@exportExcel')->name('export.customer.excel');
+    Route::get('export/customer', 'CustomerController@exportExcel')->name('export.customer.excel');
 
     Route::resource('user', 'UserController');
     Route::get('datauser', 'UserController@getData')->name('user.data');

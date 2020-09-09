@@ -1,20 +1,18 @@
-- [x]kondisi
-- [x]kategory
-- [x]customer
-- [x]item
-- [x]itemExit
-- [ ]profile
-- [x]Schedule
-- [x]Status
-- [x]User
-- [ ]Login
-
-
--[x]export excel itemExit
--[ ]export excel item 
--[x]export PDF itemExit
--[ ]export excel Schedule
--[ ]export excel Customer
-
--[ ] Hide Status & Sedder
--[ ] Test Aplikasi
+- [x] Kondisi
+- [x] Kategory
+- [x] Customer
+- [x] Item
+- [x] ItemExit
+- [ ] Profile
+- [x] Schedule
+- [x] Status
+- [x] User
+- [ ] Login
+- [ ] Dashboard Chart
+- [x] Export excel itemExit
+- [ ] Export excel item 
+- [x] Export PDF itemExit
+- [ ] Export excel Schedule
+- [ ] Export excel Customer
+- [ ] Hide Status & Sedder
+- [ ] Test Aplikasi
