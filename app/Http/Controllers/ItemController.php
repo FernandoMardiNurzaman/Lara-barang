@@ -6,6 +6,7 @@ use App\Item;
 use App\Category;
 use App\Condition;
 use App\Exports\ItemExitExport;
+use App\Exports\ItemExport;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 use Yajra\DataTables\DataTables;
@@ -178,6 +179,6 @@ class ItemController extends Controller
     public function exportExcel()
     {
         $fileName = "data-barang-" . time() . ".xlsx";
-        return Excel::download(new ItemExitExport, $fileName);
+        return Excel::download(new ItemExport, $fileName);
     }
 }

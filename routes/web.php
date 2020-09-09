@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,7 +28,7 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::resource('item', 'ItemController');
     Route::get('get-item', 'ItemController@getData')->name('get.item.data');
-    Route::get('export/itemExcel', 'ItemController@export')->name("export.item.excel");
+    Route::get('export/itemExcel', 'ItemExitController@exportExcel')->name("export.item.excel");
 
     Route::resource('customer', 'CustomerController');
     Route::get('/datacustomer', 'CustomerController@getData')->name("customer.data");
@@ -52,5 +53,6 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');

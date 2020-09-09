@@ -14,6 +14,6 @@ class ItemExport implements FromView
      */
     public function view(): View
     {
-        return view('exports.itemexcel', ['item' => Item::all()]);
+        return view('exports.itemexcel', ['items' => Item::all()]);
     }
 }
