@@ -18,7 +18,7 @@
     <title>Login</title>
 </head>
 
-<body style="background-color: #fff">
+<body style="background-color:#e6f5ff">
 
     <div class="container">
         <div class="row">
@@ -58,7 +58,7 @@
                 </form>
                 <div class="text-center  mt-5">
                     <span class="text-muted text-center">
-                        &copy;2020
+                        &copy;Intek 2020
                     </span>
                 </div>
 

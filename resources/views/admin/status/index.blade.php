@@ -25,7 +25,7 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $status->nama_status}}</td>
-                        <td>{{ $status->created_at->diffForHumans() }}</td>
+                        {{-- <td>{{ $status->created_at}}</td> --}}
                         <td>
                             <a href="{{ route("status.edit", $status->id) }}"
                                 class="btn btn-sm btn-warning d-inline mr-1">
